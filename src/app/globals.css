@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.list {
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.listItem {
+  background-color: #f8f8f8;
+  border-radius:20px;
+  box-shadow:0 2px 4px rgba(0,0,0,0.2);
+  padding:20px;
+  display:flex;
+  justify-content: space-between;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.listItem > div {
+  padding: 15px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.icon {
+  background-color: transparent;
+}
+
+.icon > svg {
+  width:20px;
+  height:20px;
+}
+
+.icon > .arrival {
+  fill: green;
+}
+
+.icon > .away {
+  fill: red;
+}
+
+.personName {
+  background-color: transparent;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.timestamp {
+  background-color: transparent;
+  text-decoration-line: underline
+  
 }
