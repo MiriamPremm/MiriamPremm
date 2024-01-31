@@ -17,11 +17,8 @@ Javascript: Logik ausführen
 export default function Home() {
   return (<>
     <div className="list">
-      <ListItem iconType="arrival"/>
-      <ListItem iconType="away"/>
-      <ListItem iconType="arrival"/>
-      <ListItem iconType="away"/>
-      <ListItem iconType="arrival"/>
+      <ListItem iconType="arrival" personName="Miriam" timestamp={new Date()}/>
+      <ListItem iconType="away" personName="Christoph" timestamp={new Date()}/>
     </div>
   </>);
 }

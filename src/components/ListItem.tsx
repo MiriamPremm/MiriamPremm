@@ -2,7 +2,15 @@ import ArrivalIcon from "./ArrivalIcon";
 import AwayIcon from "./AwayIcon";
 
 //Das ist eine Komponente
-export default function ListItem({iconType}: {iconType:string;}){
+export default function ListItem({
+  iconType,
+  personName,
+  timestamp
+}: {
+  iconType: string;
+  personName: string;
+  timestamp: Date;
+}){
 
     const showArrivalIcon = iconType === "arrival";
     const showAwayIcon = iconType === "away";
@@ -16,11 +24,12 @@ export default function ListItem({iconType}: {iconType:string;}){
           </div>
     
           <div className="personName">
-            miriam
+            {personName}
           </div>
     
           <div className="timestamp">
-            31.01.2024 11:38
+            {timestamp.toLocaleDateString("de-DE")}{" "}
+            {timestamp.toLocaleTimeString("de-DE")}
           </div>
     
         </div>
