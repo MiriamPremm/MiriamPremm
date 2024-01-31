@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .list {
-  max-width:400px;
+  max-width: 460px;
   margin:auto;
   display:flex;
   flex-direction:column;
@@ -12,10 +12,10 @@
 }
 
 .listItem {
-  background-color: #f8f8f8;
-  border-radius:20px;
+  background-color: #f1f1f1c7;
+  border-radius: 20px;
   box-shadow:0 2px 4px rgba(0,0,0,0.2);
-  padding:20px;
+  padding:25px;
   display:flex;
   justify-content: space-between;
 }
@@ -29,26 +29,28 @@
 }
 
 .icon > svg {
-  width:20px;
-  height:20px;
+  width:25px;
+  height:25px;
 }
 
 .icon > .arrival {
-  fill: green;
+  fill: rgb(8, 155, 8);
 }
 
 .icon > .away {
-  fill: red;
+  fill: rgb(199, 10, 10);
 }
 
 .personName {
   background-color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: capitalize;
+  font-size: 22px;
+  
 }
 
 .timestamp {
   background-color: transparent;
-  text-decoration-line: underline
-  
+  text-decoration-line: underline;
+  font-size: 18px;
 }

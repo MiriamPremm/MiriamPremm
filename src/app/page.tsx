@@ -14,6 +14,7 @@ Javascript: Logik ausführen
 
 //Daten speichern
 
+
 export default function Home() {
   return (<>
     <div className="list">
